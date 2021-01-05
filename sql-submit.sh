@@ -25,7 +25,7 @@ if [ ! -f $sql_file ];then
 fi
 #提交命令
 if [ $1 = "-f" ];then
-	$FLINK_HOME/bin/flink run -p 5 -c com.idengyun.flink.sqlsubmit.SqlSubmit flink-sql-submit-1.0-SNAPSHOT.jar $1 $sql_file
+	$FLINK_HOME/bin/flink run -p 5 -c com.idengyun.flink.sqlsubmit.SqlSubmit $SQL_JAR $1 $sql_file
 else
 	echo "命令格式为 ./sql-submit.sh -f <sql-file>"
 	exit 1
