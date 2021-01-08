@@ -1,6 +1,11 @@
 #!/bin/bash
+#指定 FLINK_HOME
 #export FLINK_HOME=/data/software/flink-1.11.0
+# 要依赖的jar包，需要手工指定
+SQL_JAR=./flink-sql-submit-1.0-SNAPSHOT.jar
+
 sql_file=$2
+
 if [ -z "$FLINK_HOME" ];then
 	echo "请指定FLINK_HOME 或者在该配置文件中配置"
 	exit 1
@@ -10,8 +15,7 @@ if [ $# -lt 2 ];then
 	echo "命令格式为 ./sql-submit.sh -f <sql-file>"
 	exit 1
 fi
-# 要依赖的jar包
-SQL_JAR=./flink-sql-submit-1.0-SNAPSHOT.jar
+
 if [ -f $SQL_JAR ];then
 	echo "`date +%Y-%m-%d" "%H:%M:%S` load jars from ${SQL_JAR}"
 else
