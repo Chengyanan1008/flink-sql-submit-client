@@ -15,7 +15,7 @@
 - 需要指定FLINK_HOME
 - 下载上面code中的jar包[flink-sql-submit-1.0-SNAPSHOT.jar](https://github.com/Chengyanan1008/flink-sql-submit-client/blob/master/flink-sql-submit-1.0-SNAPSHOT.jar)
 - **修改 sql-submit.sh 脚本中jar包的路径 和指定 FLINK_HOME**
-- jar包可以直接用如有需要可以根据源码自行修改，然后再打包，改源码后注意修改jar包主类
+- jar包可以直接用，如有需要可以根据源码自行修改，然后再打包，改源码后注意修改jar包主类
 
 # 使用方式
 
