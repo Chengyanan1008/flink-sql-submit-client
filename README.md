@@ -22,3 +22,12 @@
 ```sh
 ./sql-submit.sh -f <sql-file>
 ```
+
+
+# 2021年10月19日12:35🕥 
+现在flink 1.14版本已经支持SQL客户端执行SQLfile了：
+
+![image](https://user-images.githubusercontent.com/48700073/137844625-7c38498a-d1b7-497e-a011-c7d3abcfd744.png)
+
+参考：
+https://nightlies.apache.org/flink/flink-docs-release-1.14/docs/dev/table/sqlclient/#sql-client-startup-options
